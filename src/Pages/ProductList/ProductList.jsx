@@ -1,49 +1,17 @@
-import styled from "styled-components";
-import Announcement from "../components/Announcement";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
-import Products from "../components/Products";
-import { mobile } from "../responsive";
-
-const Container = styled.div``;
-
-const Title = styled.h1`
-  margin: 20px;
-`;
-
-const FilterContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Filter = styled.div`
-  margin: 20px;
-  ${mobile({ 
-    width: "0px 20px", 
-    display: "flex", 
-    flexDirection: "column" 
-  })}
-`;
-
-const FilterText = styled.span`
-  font-size: 20px;
-  font-weight: 600;
-  margin-right: 10px;
-  ${mobile({ margin: "0px" })}
-  
-`;
-const Select = styled.select`
-  padding: 5px;
-  height: 30px;
-  width: 100px;
-  margin: 20px 20px 20px 0px;
-  
-  ${mobile({ margin: "7px 0px" })}
-`;
-const Option = styled.option`
-
-`;
+import Announcement from "../../components/Announcement/Announcement";
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Newsletter from "../../components/Newsletter/Newsletter";
+import Products from "../../components/Products/Products";
+import {
+  Option,
+  Select,
+  FilterText,
+  Filter,
+  FilterContainer,
+  Title,
+  Container,
+} from "./ProductList.styles";
 
 const ProductList = () => {
   return (

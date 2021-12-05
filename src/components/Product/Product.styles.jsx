@@ -1,11 +1,6 @@
 import styled from "styled-components";
-import {
-  ShoppingCartOutlined,
-  SearchOutlined,
-  FavoriteBorderOutlined,
-} from "@material-ui/icons";
 
-const Info = styled.div`
+export const Info = styled.div`
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -21,7 +16,7 @@ const Info = styled.div`
   cursor: pointer;
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   flex: 1;
   margin: 5px;
   min-width: 280px;
@@ -37,19 +32,19 @@ const Container = styled.div`
   }
 `;
 
-const Circle = styled.div`
+export const Circle = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
 `;
-const Image = styled.img`
+export const Image = styled.img`
   height: 75%;
   z-index: 2;
 `;
 
-const Icon = styled.div`
+export const Icon = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -65,25 +60,3 @@ const Icon = styled.div`
     transform: scale(1.1);
   }
 `;
-
-const Product = ({ item }) => {
-  return (
-    <Container>
-      <Circle />
-      <Image src={item.img} />
-      <Info>
-        <Icon>
-          <ShoppingCartOutlined />
-        </Icon>
-        <Icon>
-          <SearchOutlined />
-        </Icon>
-        <Icon>
-          <FavoriteBorderOutlined />
-        </Icon>
-      </Info>
-    </Container>
-  );
-};
-
-export default Product;

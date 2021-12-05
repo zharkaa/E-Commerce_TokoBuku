@@ -1,10 +1,10 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Cart from "./Pages/Cart";
-import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import Product from "./Pages/Product";
-import ProductList from "./Pages/ProductList";
-import Register from "./Pages/Register";
+import Cart from "./Pages/Cart/Cart";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import Product from "./Pages/Product/Product";
+import ProductList from "./Pages/ProductList/ProductList";
+import Register from "./Pages/Register/Register";
 
 const App = () => {
   return (
