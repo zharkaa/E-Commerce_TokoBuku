@@ -1,4 +1,4 @@
-import {Container} from './Announcement.styles'
+import { Container } from "./Announcement.styles";
 
 const Announcement = () => {
   return <Container>MEGA BIG LOREM IPSUM</Container>;

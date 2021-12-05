@@ -10,7 +10,7 @@ import {
   Center,
   Right,
   MenuItem,
-  Logo
+  Logo,
 } from "./Navbar.styles";
 
 const Navbar = () => {
