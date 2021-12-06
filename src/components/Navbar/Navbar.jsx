@@ -31,7 +31,7 @@ const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <Badge badgeContent={4} color="primary">
-            <ShoppingCartOutlined />
+            <ShoppingCartOutlined style={{ cursor: "pointer"}} />
           </Badge>
         </Right>
       </Wrapper>

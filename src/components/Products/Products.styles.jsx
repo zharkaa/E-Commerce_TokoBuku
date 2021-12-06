@@ -5,4 +5,5 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px solid #e9e9e9;
 `;

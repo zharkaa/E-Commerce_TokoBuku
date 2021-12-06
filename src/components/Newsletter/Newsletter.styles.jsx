@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 1px solid #e9e9e9;
 `;
 export const Title = styled.h1`
   font-size: 70px;
@@ -21,9 +22,10 @@ export const Desc = styled.div`
 `;
 export const InputContainer = styled.div`
   width: 50%;
-  height: 40px;
+  height: 44px;
   background-color: white;
   display: flex;
+  border: none;
   justify-content: space-between;
   border: 1px solid lightgray;
   ${mobile({ width: "80%" })}
@@ -32,6 +34,8 @@ export const Input = styled.input`
   border: none;
   flex: 8;
   padding-left: 20px;
+  outline: none;
+
 `;
 export const Button = styled.button`
   flex: 0.5;

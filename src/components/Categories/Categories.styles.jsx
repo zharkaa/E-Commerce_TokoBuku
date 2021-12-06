@@ -6,4 +6,5 @@ export const Container = styled.div`
   padding: 20px;
   justify-content: space-between;
   ${mobile({ padding: "0px", flexDirection: "column" })}
+  border-bottom: 1px solid #e9e9e9;
 `;

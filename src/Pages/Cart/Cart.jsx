@@ -44,7 +44,7 @@ const Cart = () => {
             <TopText>Shopping Bag (2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
-          <TopButton type="filled">Checkout Now</TopButton>
+          <TopButton>Checkout Now</TopButton>
         </Top>
         <Bottom>
           <Info>

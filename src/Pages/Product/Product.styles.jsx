@@ -98,7 +98,7 @@ export const Amount = styled.div`
 `;
 
 export const Button = styled.button`
-  padding: 15px;
+  /* padding: 15px;
   height: 15px;
   border: 1px solid teal;
   background-color: white;
@@ -108,5 +108,24 @@ export const Button = styled.button`
 
   &:hover {
       background-color: #d3d3d3;
+  } */
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #241c15;
+  background-color: #e4e4e4;
+  padding: 0 18px;
+  :hover {
+    /* color: #241c15; */
+    background-color: #95f7e5;
+    transition: all 0.1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #95f7e5;
   }
 `;

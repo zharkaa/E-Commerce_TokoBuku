@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
 
-
 export const Container = styled.div``;
 
 export const Wrapper = styled.div`
@@ -22,13 +21,33 @@ export const Top = styled.div`
 `;
 
 export const TopButton = styled.button`
-  padding: 10px;
-  font-weight: 600;
+  /* padding: 10px; */
+  /* font-weight: 600; */
+  /* cursor: pointer; */
+  /* border: ${(props) => props.type === "filled" && "none"}; */
+  /* border: none; */
+  /* background-color: ${(props) =>
+    props.type === "filled" ? "black" : "transparent"}; */
+  /* color: ${(props) => props.type === "filled" && "white"}; */
+
+  display: inline-block;
+  outline: none;
   cursor: pointer;
-  border: ${(props) => props.type === "filled" && "none"};
-  background-color: ${(props) =>
-    props.type === "filled" ? "black" : "transparent"};
-  color: ${(props) => props.type === "filled" && "white"};
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #241c15;
+  /* color: #7bffe7; */
+  background-color: #e4e4e4;
+  transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+  padding: 0 18px;
+  :hover {
+    color: #241c15;
+    background-color: #bbfff3;
+  }
 `;
 
 export const TopTexts = styled.div`
@@ -122,8 +141,26 @@ export const SummaryItemText = styled.span``;
 export const SummaryItemPrice = styled.span``;
 export const SummaryButton = styled.button`
   width: 100%;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  font-weight: 600;
+  /* padding: 10px; */
+  /* background-color: black; */
+  /* color: white; */
+  /* font-weight: 600; */
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #007c89;
+  transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+  padding: 0 18px;
+  :hover {
+    color: #ffffff;
+    background-color: #006570;
+  }
 `;
