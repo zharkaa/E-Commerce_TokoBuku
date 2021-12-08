@@ -2,16 +2,19 @@
   {
     "id": 1,
     "img": "https://images.pexels.com/photos/7256732/pexels-photo-7256732.jpeg?cs=srgb&dl=pexels-anete-lusina-7256732.jpg&fm=jpg",
-    "title": "LOREM IPSUM TITLE"
+    "title": "LOREM IPSUM TITLE",
+    "catg": "book"
   },
   {
     "id": 2,
     "img": "https://images.pexels.com/photos/7256732/pexels-photo-7256732.jpeg?cs=srgb&dl=pexels-anete-lusina-7256732.jpg&fm=jpg",
-    "title": "LOREM IPSUM TITLE 2"
+    "title": "LOREM IPSUM TITLE 2",
+    "catg": "book1"
   },
   {
     "id": 3,
     "img": "https://images.pexels.com/photos/7256732/pexels-photo-7256732.jpeg?cs=srgb&dl=pexels-anete-lusina-7256732.jpg&fm=jpg",
-    "title": "LOREM IPSUM TITLE 3"
+    "title": "LOREM IPSUM TITLE 3",
+    "catg": "book2"
   }
 ]
