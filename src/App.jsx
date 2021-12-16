@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import {
   Navigate,
   Routes,
@@ -10,10 +11,11 @@ import Login from "./Pages/Login/Login";
 import Product from "./Pages/Product/Product";
 import ProductList from "./Pages/ProductList/ProductList";
 import Register from "./Pages/Register/Register";
+import Success from "./Pages/Success";
 import ScrollToTop from "./scrollToTop";
 
 const App = () => {
-  const user = false;
+  const user = useSelector((state) => state.user.currentUser);
   return (
     <Router>
       <ScrollToTop />
@@ -25,6 +27,7 @@ const App = () => {
         />
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/success" element={<Success />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/products/:category" element={<ProductList />} />
       </Routes>

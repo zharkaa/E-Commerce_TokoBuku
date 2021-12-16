@@ -12,8 +12,11 @@ import {
   MenuItem,
   Logo,
 } from "./Navbar.styles";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const quantity = useSelector((state) => state.cart.quantity);
   return (
     <Container>
       <Wrapper>
@@ -30,9 +33,13 @@ const Navbar = () => {
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
-          <Badge badgeContent={4} color="primary">
-            <ShoppingCartOutlined style={{ cursor: "pointer"}} />
-          </Badge>
+          <MenuItem>
+            <Link to="/cart" >
+              <Badge badgeContent={quantity} color="primary">
+                <ShoppingCartOutlined style={{ cursor: "pointer" }} />
+              </Badge>
+            </Link>
+          </MenuItem>
         </Right>
       </Wrapper>
     </Container>

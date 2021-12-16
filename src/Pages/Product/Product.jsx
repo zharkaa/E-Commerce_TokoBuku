@@ -1,10 +1,12 @@
 import { Add, Remove } from "@material-ui/icons";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import Announcement from "../../components/Announcement/Announcement";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Newsletter from "../../components/Newsletter/Newsletter";
+import { addProduct } from "../../redux/cartRedux";
 import { publicRequest } from "../../requestMethods";
 import {
   Container,
@@ -34,6 +36,7 @@ const Product = () => {
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState("");
   const [size, setSize] = useState("");
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const getProduct = async () => {
@@ -55,8 +58,8 @@ const Product = () => {
 
   const handleClick = () => {
     // UPDATE CART
-    
-  }
+    dispatch(addProduct({ ...product, quantity, color, size }));
+  };
 
   return (
     <Container>
@@ -74,12 +77,12 @@ const Product = () => {
             <Filter>
               <FilterTitle>Color</FilterTitle>
               {product.color?.map((c) => (
-                <FilterColor color={c} key={c} onClick={() => setColor(c)}/>
+                <FilterColor color={c} key={c} onClick={() => setColor(c)} />
               ))}
             </Filter>
             <Filter>
               <FilterTitle>Size</FilterTitle>
-              <FilterSize onChange={(e) => setSize(e.target.value)} >
+              <FilterSize onChange={(e) => setSize(e.target.value)}>
                 {product.size?.map((s) => (
                   <FilterSizeOption key={s}>{s}</FilterSizeOption>
                 ))}

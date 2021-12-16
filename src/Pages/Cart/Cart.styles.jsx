@@ -90,6 +90,15 @@ export const Details = styled.div`
 `;
 export const ProductName = styled.span``;
 export const ProductId = styled.span``;
+export const ProductColor = styled.div`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+
+  /* cursor: pointer; */
+`;
+export const ProductSize = styled.span``;
 export const PriceDetail = styled.div`
   flex: 1;
   display: flex;
@@ -124,7 +133,7 @@ export const Summary = styled.div`
   border: 0.5px solid lightgray;
   border-radius: 10px;
   padding: 20px;
-  height: 50vh;
+  height: 40vh;
 `;
 
 export const SummaryTitle = styled.h1`
